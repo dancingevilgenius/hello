@@ -1,0 +1,18 @@
+server: port:5432
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/schooldb
+    username: postgres
+    password: asdf1234
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      # ddl-auto options: 'none', 'validate', 'update', 'create', 'create-drop'
+      ddl-auto: create
+    properties:
+      hibernate:
+        # Specifies the SQL dialect for Hibernate
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
