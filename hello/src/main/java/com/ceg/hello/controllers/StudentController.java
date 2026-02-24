@@ -19,10 +19,6 @@ public class StudentController {
     private final StudentService studentService;
 
     @GetMapping("/allstudents")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
-    }
-
     public List<Student> all() {
         return studentService.all();
     }
